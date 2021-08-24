@@ -62,9 +62,6 @@ contract StakingContract is Ownable {
         }
     }
 
-    /**
-     * @notice A method to allow a stakeholder to withdraw his rewards.
-     */
     function claimReward() public
     {
         uint256 reward = rewards[msg.sender];
